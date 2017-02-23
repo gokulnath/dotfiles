@@ -1,5 +1,5 @@
 set nocompatible                " choose no compatibility with legacy vi
-syntax enable
+syntax on
 set encoding=utf-8
 set showcmd                     " display incomplete commands
 filetype plugin indent on       " load file type plugins + indentation
@@ -21,10 +21,14 @@ set smartcase                   " ... unless they contain at least one capital l
 "" Faster split navigation
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
+set pastetoggle=<F2>
 
 "" Plugins
 call plug#begin()
 Plug 'https://github.com/ctrlpvim/ctrlp.vim'
 Plug 'https://github.com/vim-ruby/vim-ruby'
 Plug 'https://github.com/tpope/vim-fugitive'
+Plug 'https://github.com/mustache/vim-mustache-handlebars'
+Plug 'bling/vim-airline'
 call plug#end()
+
